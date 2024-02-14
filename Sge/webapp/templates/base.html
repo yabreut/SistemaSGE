@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>ivider">
+
+    <style type="text/css">
+        img.pequeña{width: 50px; height: 50px;border-radius:50px; top: calc(100% - 150px)}
+
+    </style>
+
+
+
+          <title>SGE - Sistema De Gestión De Entidades</title>
+          <link href="static/assets/img/logoedenorte.png" rel="icon">
+
+        <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/quill/quill.snow.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/quill/quill.bubble.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+         <link href="{% static 'assets/vendor/simple-datatables/style.css' %}" rel="stylesheet">
+
+       
+                           
+   
+                   
+          </head>
+
+
+
+
+                 <body>
+                
+         
+
+                    <header id="header" class="header fixed-top d-flex align-items-center">
+
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="blogapp/index.html" class="logo d-flex align-items-center">
+                              <img src="static/assets/img/logoedenorte.png" alt="">
+                              <span class="d-none d-lg-block">SGE</span>
+                            </a>
+                            <i class="bi bi-list toggle-sidebar-btn"></i>
+                          </div><!-- End Logo -->
+
+
+                        
+                          <h4 style="background-color:rgb(56 189 248);color:white;text-align:center;fontSize:50px">Sistema de Gestión de Entidades</h4>
+
+                          <div class="d-flex align-items-center justify-content-between">
+                            
+             
+                             
+                             
+                          
+                            <i class="bi bi-list toggle-sidebar-btn"></i>
+                          </div><!-- End Logo -->
+
+                          <div class="d-flex align-items-center justify-content-between">
+                           
+                        </div><!-- End Logo -->
+
+
+                   <!--
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="static/assets/img/Selección_070.png" alt="Profile" class="rounded-circle" align=right>
+                        <h6>Equipo SDP.</h6>
+                     </a> End Profile Iamge Icon --> 
+                   
+                     
+                    </header><!-- End Header -->
+
+
+
+                        <aside id="sidebar" class="sidebar">
+
+                        <ul class="sidebar-nav" id="sidebar-nav">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-journal-text"></i><span>Formulario</span><i class="bi bi-chevron-down ms-auto"></i>
+                              </a>
+                              <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                                
+                                <li>
+                                  <a href="{% url 'consulta' %}">consulta 
+                                    <!--   <i class="bi bi-circle"></i><span>Solicitudes</span> -->
+                                  </a>
+                                </li>
+          
+
+                               
+
+                                  
+                                
+
+                            
+                          </li><!-- End Components Nav --> 
+
+                        </ul>
+
+                    </aside><!-- End Sidebar-->
+
+
+                    {% block content %}
+                   
+           
+                   {% endblock content %}
+
+                       
+                           
+                <p><i>Powered by Evilnapsis</i></p>
+
+
+
+
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+ 
+ <!--
+  <script src="{% static 'assets/vendor/apexcharts/apexcharts.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/chart.js/chart.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/echarts/echarts.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/quill/quill.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/simple-datatables/simple-datatables.js' %}"></script>
+  <script src="{% static 'assets/vendor/tinymce/tinymce.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  -->
+
+
+                    </body>
+                </html>
